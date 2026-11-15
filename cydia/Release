@@ -1,0 +1,17 @@
+Origin: TubeMini
+Label: TubeMini
+Suite: stable
+Version: 0.5.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: TubeMini — YouTube cho iPad iOS 6
+Date: Sun, 15 Nov 2026 06:40:08 UTC
+MD5Sum:
+ 6c25c912a14af74615fa18bf274cb20c 712 Packages
+ 8fffc6f3014474c816386be0da18e952 449 Packages.gz
+ 6bb3d5eda041e2b643e4b406c6cbd4b8 519 Packages.bz2
+SHA256:
+ 3c3784ced2f5f62d4e68d65757c49c47b5687c3e753c0ab18996aeaa488251bf 712 Packages
+ 2f00661b21f66e0e500678c35f4355536135e1ad95a4c47bf02ad57cc1baacd0 449 Packages.gz
+ d8d4bf8130937a934bed0a07b15a64e3e12eae864c2d1fcff922eb0b47c66433 519 Packages.bz2

@@ -1,0 +1,123 @@
+/* TubeMini site — works on Safari iOS 6: no grid / flexbox / CSS variables / JavaScript,
+   -webkit- prefixes next to the standard properties. */
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    background: #dfe1e5;
+    color: #222;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a { color: #1f5fae; }
+img { border: 0; }
+
+/* Header: dark brushed band with the icon */
+.hero {
+    background: #26272b;
+    background-image: -webkit-linear-gradient(top, #4b4d53 0%, #25262a 60%, #18191c 100%);
+    background-image: linear-gradient(to bottom, #4b4d53 0%, #25262a 60%, #18191c 100%);
+    border-bottom: 1px solid #000;
+    color: #fff;
+    text-align: center;
+    padding: 26px 16px 30px;
+}
+.hero img { width: 128px; height: 128px; }
+.hero h1 {
+    font-size: 42px;
+    margin: 6px 0 2px;
+    letter-spacing: -1px;
+    text-shadow: 0 -1px 0 #000;
+}
+.hero p { margin: 0 auto 16px; max-width: 560px; color: #c9cbd1; font-size: 18px; text-shadow: 0 -1px 0 #000; }
+.hero small { display: block; margin-top: 12px; color: #8d9098; font-size: 13px; }
+
+/* Glossy iOS 6 buttons */
+.btn {
+    display: inline-block;
+    margin: 5px 4px;
+    padding: 11px 18px;
+    border: 1px solid #7a0a0e;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    background: #c4161c;
+    background-image: -webkit-linear-gradient(top, #f2645c 0%, #d0282b 50%, #b4141a 51%, #c4161c 100%);
+    background-image: linear-gradient(to bottom, #f2645c 0%, #d0282b 50%, #b4141a 51%, #c4161c 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 1px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+.btn.dark {
+    border-color: #0d0e10;
+    background: #3a3c42;
+    background-image: -webkit-linear-gradient(top, #6a6d75 0%, #45474e 50%, #33353a 51%, #3c3e44 100%);
+    background-image: linear-gradient(to bottom, #6a6d75 0%, #45474e 50%, #33353a 51%, #3c3e44 100%);
+}
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 14px 30px; }
+.card {
+    background: #fff;
+    border: 1px solid #c7c9ce;
+    border-radius: 12px;
+    padding: 4px 20px 16px;
+    margin: 18px 0;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+h2 {
+    font-size: 23px;
+    margin: 16px 0 8px;
+    color: #2b2c30;
+    text-shadow: 0 1px 0 #fff;
+}
+h3 { font-size: 18px; margin: 16px 0 4px; }
+
+/* Two columns of features (one on phones) */
+.cols:after { content: ""; display: block; clear: both; }
+.col { float: left; width: 48%; margin-right: 4%; }
+.col.last { margin-right: 0; }
+.col ul { padding-left: 20px; margin: 4px 0 8px; }
+.col li { margin: 3px 0; }
+
+/* Screenshots */
+.shots { text-align: center; font-size: 0; }
+.shot { display: inline-block; vertical-align: top; width: 31%; margin: 0 1% 14px; font-size: 13px; color: #5d6068; }
+.shot img {
+    width: 100%;
+    border: 1px solid #9a9da5;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+pre, code { font-family: Menlo, Courier, monospace; }
+code { background: #eef0f3; border-radius: 4px; padding: 1px 4px; font-size: 14px; }
+pre {
+    background: #1e1f23;
+    color: #e5e6ea;
+    border-radius: 8px;
+    padding: 11px 13px;
+    font-size: 13px;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+
+.flow { text-align: center; font-size: 15px; color: #444; }
+.flow span {
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 7px 12px;
+    border: 1px solid #c7c9ce;
+    border-radius: 8px;
+    background: #f5f6f8;
+}
+.note { color: #6a6d75; font-size: 14px; }
+.foot { text-align: center; color: #6a6d75; font-size: 13px; padding: 10px 14px 30px; text-shadow: 0 1px 0 #fff; }
+
+@media (max-width: 620px) {
+    .col { float: none; width: auto; margin-right: 0; }
+    .shot { width: 46%; margin: 0 2% 12px; }
+    .hero h1 { font-size: 34px; }
+}
