@@ -16,3 +16,22 @@ MD5sum: 5780deb224b800278ec69209d5dc4536
 SHA1: c564126fe408ea13eba110815874cdafe54ecf91
 SHA256: 4b9c6b1e088c22c3f35f903c8b56b9cddc1ebbfcef6d2721f014587aba6c497e
 Installed-Size: 472
+
+Package: vn.tubemini.io
+Name: TubeMini
+Version: 0.5.1
+Architecture: iphoneos-arm
+Description: Ứng dụng YouTube cho iPad iOS 6, dùng server tubemini-server trong mạng nhà.
+Maintainer: TubeMini <https://github.com/TubeMini>
+Author: TubeMini <https://github.com/TubeMini>
+Section: Multimedia
+Depends: firmware (>= 6.0)
+Homepage: https://tubemini.github.io/
+Depiction: https://tubemini.github.io/cydia/depiction/
+Icon: https://tubemini.github.io/cydia/icon.png
+Filename: debs/vn.tubemini.io_0.5.1_iphoneos-arm.deb
+Size: 206438
+MD5sum: 02ca182d096704811503b669687adc74
+SHA1: 6d0dd2e4fb701c7e00288f93458836070a093c06
+SHA256: aa99a83b0583f2c9d3f180e1b8c6059a7731e588006f07e0d0e0a4e8db1b4a02
+Installed-Size: 480

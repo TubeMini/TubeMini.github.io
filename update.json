@@ -1,8 +1,8 @@
 {
-  "version": "0.5.0",
-  "package_version": "0.5.0",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.5.0_iphoneos-arm.deb",
-  "sha256": "4b9c6b1e088c22c3f35f903c8b56b9cddc1ebbfcef6d2721f014587aba6c497e",
-  "size": 203320,
-  "notes": ""
+  "version": "0.5.1",
+  "package_version": "0.5.1",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.5.1_iphoneos-arm.deb",
+  "sha256": "aa99a83b0583f2c9d3f180e1b8c6059a7731e588006f07e0d0e0a4e8db1b4a02",
+  "size": 206438,
+  "notes": "Thêm mục Nhóm Telegram trong Cài đặt (mã QR, @tivikit)."
 }
