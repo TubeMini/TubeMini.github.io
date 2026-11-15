@@ -53,6 +53,12 @@ img { border: 0; }
     background-image: -webkit-linear-gradient(top, #6a6d75 0%, #45474e 50%, #33353a 51%, #3c3e44 100%);
     background-image: linear-gradient(to bottom, #6a6d75 0%, #45474e 50%, #33353a 51%, #3c3e44 100%);
 }
+.btn.tg {
+    border-color: #0b5d8c;
+    background: #229ed9;
+    background-image: -webkit-linear-gradient(top, #6cc9f5 0%, #2aa7e2 50%, #1a93cf 51%, #229ed9 100%);
+    background-image: linear-gradient(to bottom, #6cc9f5 0%, #2aa7e2 50%, #1a93cf 51%, #229ed9 100%);
+}
 
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 14px 30px; }
 .card {
