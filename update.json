@@ -1,8 +1,8 @@
 {
-  "version": "0.5.1",
-  "package_version": "0.5.1",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.5.1_iphoneos-arm.deb",
-  "sha256": "aa99a83b0583f2c9d3f180e1b8c6059a7731e588006f07e0d0e0a4e8db1b4a02",
-  "size": 206438,
-  "notes": "Thêm mục Nhóm Telegram trong Cài đặt (mã QR, @tivikit)."
+  "version": "0.5.2",
+  "package_version": "0.5.2",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.5.2_iphoneos-arm.deb",
+  "sha256": "a15bc601adb18072f89e4ea5779ed9665306c6226f54446487fcc8b0a1fd273e",
+  "size": 207462,
+  "notes": "Sửa lỗi xem video rồi bấm Home thỉnh thoảng mất tiếng. Chỉ nghe: bấm Home khi tiếng chưa kịp phát thì tiếng sẽ phát khi mở lại app."
 }
