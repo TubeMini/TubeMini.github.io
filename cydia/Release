@@ -6,12 +6,12 @@ Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: TubeMini — YouTube cho iPad và iPhone iOS 6
-Date: Mon, 16 Nov 2026 03:51:48 UTC
+Date: Tue, 17 Nov 2026 11:22:52 UTC
 MD5Sum:
- 868992fc2f6c38f64baa26c10ed76ff2 2862 Packages
- d1124f583b567538c635f8bb0f5f13dd 800 Packages.gz
- e2bbab94d81ce164205dc136afeb0001 946 Packages.bz2
+ fbb1cd66afc718f4c26d01c7246da149 2829 Packages
+ 74a550ececac52417ea262e13aea47d4 773 Packages.gz
+ bdef8d59f62a7c6e7ca7ba27c07fa68c 907 Packages.bz2
 SHA256:
- 48d4fe0076f5a34a223f3733fd2d227a488505c23b705dcd99ec6749cbdcf423 2862 Packages
- 9dab111343a203d6a9a77a3c122d8bebe02da1229befa2d47b0d270d19ac35b4 800 Packages.gz
- 627a5fe082fec773710493265e1668d493ab7b35e0745855231fd23f44654532 946 Packages.bz2
+ 904a69931829ef3e241b522cf2d4077f2a7774849eac1d5aecd7c3ebbbca21e7 2829 Packages
+ d9426e03db39f5a7b0e7a91a9afbb06267599b36ef48fa5fea23edf98fdcc87a 773 Packages.gz
+ 460b4148605bf9817b2b32bf887c93b241afe6291eb1594a2b5509fd0981f3b3 907 Packages.bz2
