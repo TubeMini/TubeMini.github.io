@@ -1,8 +1,8 @@
 {
-  "version": "0.5.4",
-  "package_version": "0.5.4",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.5.4_iphoneos-arm.deb",
-  "sha256": "c8b48d5b2cdb68a12d1a02950597c571aa1869225b6c89cccad7813a554681ea",
-  "size": 249660,
-  "notes": "Icon mới cho app (ô kính bóng sọc đỏ, cam, hồng với nút play trắng). Chức năng không đổi so với 0.5.3."
+  "version": "0.6.0",
+  "package_version": "0.6.0",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.6.0_iphoneos-arm.deb",
+  "sha256": "57125a540d29b21fbe54d0972e52a4e277df87657039d72e7842bc872408b21c",
+  "size": 303994,
+  "notes": "Giao diện mới kiểu iOS 26, bố cục như app YouTube mới: thanh tab kính nổi, nút tìm kiếm tròn, thẻ video lớn, Cài đặt dạng thẻ. Chạy được cả trên iOS 5. Sửa lỗi thoát app trên iOS 6 khi đổi giao diện sáng / tối."
 }

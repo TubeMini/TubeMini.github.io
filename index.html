@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TubeMini — YouTube cho iPad iOS 6</title>
-<meta name="description" content="TubeMini: xem YouTube trên iPad mini 1 và các máy iOS 6, nhờ một server nhỏ trong mạng nhà.">
+<title>TubeMini — YouTube cho iPad và iPhone iOS 5 – 8</title>
+<meta name="description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8), nhờ một server nhỏ trong mạng nhà.">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="cydia/icon.png">
 <link rel="stylesheet" href="style.css?v=810edb85">
@@ -14,19 +14,19 @@
 <div class="hero">
   <img src="img/icon.png" alt="Icon TubeMini" width="128" height="128">
   <h1>TubeMini</h1>
-  <p>Xem YouTube trên iPad mini 1 và các máy iOS 6, nhờ một server nhỏ chạy trong mạng nhà.</p>
+  <p>Xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8), nhờ một server nhỏ chạy trong mạng nhà.</p>
   <a class="btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://tubemini.github.io/cydia/">Thêm nguồn vào Cydia</a>
   <a class="btn dark" href="https://github.com/TubeMini/TubeMini/releases/latest">Tải về</a>
   <a class="btn dark" href="https://github.com/TubeMini/TubeMini">Mã nguồn</a>
   <a class="btn tg" href="#telegram">Nhóm Telegram</a>
-  <small>Phiên bản 0.5.4 · Mã nguồn mở GPL-3.0 · Không liên quan tới YouTube hay Google</small>
+  <small>Phiên bản 0.6.0 · Mã nguồn mở GPL-3.0 · Không liên quan tới YouTube hay Google</small>
 </div>
 
 <div class="wrap">
 
 <div class="card">
   <h2>Vì sao có TubeMini?</h2>
-  <p>App YouTube gốc trên iOS 6 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini gồm hai phần:</p>
+  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini gồm hai phần:</p>
   <div class="cols">
     <div class="col">
       <h3>App TubeMini cho iPad</h3>
@@ -37,7 +37,8 @@
         <li>Lịch sử, xem tiếp từ chỗ cũ</li>
         <li><b>Chỉ nghe</b>: phát khi khoá màn hình, thanh nghe nhạc thu nhỏ</li>
         <li><b>Tải về</b> 360p / 720p / 1080p để xem khi không có mạng</li>
-        <li>Giao diện sáng / tối, lưới hoặc danh sách</li>
+        <li>Giao diện kiểu iOS 26 như app YouTube mới: thanh tab kính nổi, thẻ video lớn</li>
+        <li>Giao diện sáng / tối, thẻ hoặc danh sách</li>
         <li>Tự cập nhật (OTA) ngay trong app</li>
       </ul>
     </div>
@@ -58,12 +59,12 @@
 <div class="card">
   <h2>Ảnh chụp trên iPad mini 1</h2>
   <div class="shots">
-    <div class="shot"><img src="img/home-grid.png" alt="Trang chủ dạng lưới">Trang chủ dạng lưới</div>
+    <div class="shot"><img src="img/home.png" alt="Trang chủ">Trang chủ</div>
     <div class="shot"><img src="img/video.png" alt="Trang video">Trang video</div>
     <div class="shot"><img src="img/channel.png" alt="Trang kênh">Trang kênh</div>
-    <div class="shot"><img src="img/home-list.png" alt="Video mới từ kênh đã theo dõi">Kênh đã theo dõi</div>
-    <div class="shot"><img src="img/audio.png" alt="Thanh nghe nhạc thu nhỏ">Chỉ nghe, thanh thu nhỏ</div>
-    <div class="shot"><img src="img/history.png" alt="Lịch sử xem">Lịch sử, xem tiếp</div>
+    <div class="shot"><img src="img/search.png" alt="Tìm kiếm">Tìm kiếm</div>
+    <div class="shot"><img src="img/download.png" alt="Chọn chất lượng để tải về">Tải về xem offline</div>
+    <div class="shot"><img src="img/dark.png" alt="Giao diện tối">Giao diện tối</div>
   </div>
 </div>
 
@@ -77,9 +78,9 @@
   <h2>1. Cài server</h2>
   <h3>Ubuntu / Debian</h3>
   <p>Một script cài theo một trong hai cách: <b>Docker</b> (container, Docker hoặc Podman) hoặc <b>service</b> systemd. Cả hai cách đều tự khởi động cùng máy và tự cập nhật yt-dlp.</p>
-<pre><code>curl -LO https://github.com/TubeMini/TubeMini/releases/download/v0.5.4/tubemini-server-0.5.4.tar.gz
-tar xzf tubemini-server-0.5.4.tar.gz
-cd tubemini-server-0.5.4
+<pre><code>curl -LO https://github.com/TubeMini/TubeMini/releases/download/v0.6.0/tubemini-server-0.6.0.tar.gz
+tar xzf tubemini-server-0.6.0.tar.gz
+cd tubemini-server-0.6.0
 sudo ./install.sh</code></pre>
   <p class="note">Script hỏi cách cài, cổng (mặc định 8080) và mã truy cập. Chạy lại để cập nhật; gỡ bằng <code>sudo ./install.sh --uninstall</code>.</p>
   <h3>Windows / macOS</h3>
@@ -88,13 +89,13 @@ sudo ./install.sh</code></pre>
 
 <div class="card">
   <h2>2. Cài app lên iPad</h2>
-  <p>Cần iPad (hoặc iPhone) <b>iOS 6 đã jailbreak</b>.</p>
+  <p>Cần iPad (hoặc iPhone) <b>iOS 5, 6, 7 hoặc 8 đã jailbreak</b>.</p>
   <h3>Cách nhanh: Cydia</h3>
   <p>Trên iPad mở trang này bằng Safari, bấm <b>Thêm nguồn vào Cydia</b>. Hoặc vào Cydia → Nguồn → Sửa → Thêm, rồi nhập:</p>
 <pre><code>https://tubemini.github.io/cydia/</code></pre>
   <p>Tìm <b>TubeMini</b> rồi cài. Các bản sau app tự báo khi có bản mới; bấm Cập nhật, app tự cài rồi khởi động lại màn hình chính.</p>
   <h3>Cài bằng file .deb</h3>
-  <p>Tải <code>vn.tubemini.io_0.5.4_iphoneos-arm.deb</code> ở trang <a href="https://github.com/TubeMini/TubeMini/releases/latest">Releases</a>, chép sang iPad hoặc iPhone rồi chạy <code>dpkg -i</code> (qua SSH, iFile hoặc Filza).</p>
+  <p>Tải <code>vn.tubemini.io_0.6.0_iphoneos-arm.deb</code> ở trang <a href="https://github.com/TubeMini/TubeMini/releases/latest">Releases</a>, chép sang iPad hoặc iPhone rồi chạy <code>dpkg -i</code> (qua SSH, iFile hoặc Filza).</p>
   <h3>Kết nối</h3>
   <p>Mở TubeMini → <b>Cài đặt</b> → nhập địa chỉ server, ví dụ <code>http://192.168.1.10:8080</code> (hoặc bấm <b>Tìm máy chủ trong mạng</b>), rồi bấm <b>Kiểm tra kết nối</b>.</p>
 </div>
@@ -108,18 +109,18 @@ sudo ./install.sh</code></pre>
   <h2>Nhóm Telegram</h2>
   <img class="qr" src="img/telegram-qr.png" width="145" height="145" alt="Mã QR nhóm Telegram t.me/tivikit">
   <p>Hỏi cách cài, báo lỗi, góp ý tính năng và nhận tin khi có bản mới: nhóm <a href="https://t.me/tivikit"><b>t.me/tivikit</b></a> (<b>@tivikit</b>).</p>
-  <p class="note">iPad iOS 6 không mở được Telegram (máy chủ Telegram cần kết nối bảo mật mới hơn iOS 6). Hãy quét mã QR bằng camera điện thoại, hoặc mở Telegram trên điện thoại / máy tính rồi tìm <b>@tivikit</b>.</p>
+  <p class="note">iPad iOS 5 / 6 không mở được Telegram (máy chủ Telegram cần kết nối bảo mật mới hơn). Hãy quét mã QR bằng camera điện thoại, hoặc mở Telegram trên điện thoại / máy tính rồi tìm <b>@tivikit</b>.</p>
   <a class="btn tg" href="https://t.me/tivikit">Mở trong Telegram</a>
 </div>
 
 <div class="card">
   <h2>Câu hỏi thường gặp</h2>
   <h3>Xem được khi ra ngoài (4G) không?</h3>
-  <p>Được, nếu iPad kết nối VPN về nhà (L2TP/IPsec có sẵn trên iOS 6). Server cũng có chế độ phát qua server (<code>proxy_fallback</code>), mặc định tắt.</p>
+  <p>Được, nếu iPad kết nối VPN về nhà (L2TP/IPsec có sẵn trong iOS). Server cũng có chế độ phát qua server (<code>proxy_fallback</code>), mặc định tắt.</p>
   <h3>Có cần tài khoản Google không?</h3>
   <p>Không. Kênh theo dõi và lịch sử lưu trên server của bạn.</p>
   <h3>Máy nào dùng được?</h3>
-  <p>App làm cho iPad mini 1 (iOS 6.1.3) và đã thử trên iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch). Chạy trên iPad và iPhone iOS 6 có chip armv7. Server chạy trên mọi máy Windows, Linux hay macOS.</p>
+  <p>iPad và iPhone iOS 5 – 8 đã jailbreak. Đã thử trên iPad 1 (iOS 5.1.1), iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch) và iPad mini 1 (iOS 8.4.1). Server chạy trên mọi máy Windows, Linux hay macOS.</p>
 </div>
 
 </div>
