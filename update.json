@@ -1,8 +1,8 @@
 {
-  "version": "0.8.0",
-  "package_version": "0.8.0",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.8.0_iphoneos-arm.deb",
-  "sha256": "0dcf93fe7fb9e7e6f0ebeced34c7f753d9265678ae18c3730c57b321c4a84eaf",
-  "size": 347364,
-  "notes": "Trình phát mới: chạm đúp tua, chụm để lấp đầy, vuốt chỉnh độ sáng / âm lượng, tốc độ, hẹn giờ tắt, đổi chất lượng khi đang xem. Thu nhỏ để lướt tìm video khác. Hình nổi (iOS 6 – 8): cài thêm gói TubeMini - Hình nổi trong Cydia."
+  "version": "0.9.0",
+  "package_version": "0.9.0",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.9.0_iphoneos-arm.deb",
+  "sha256": "f5945fd2b26c1399ac8ed6d98106ec6bb37dafc1ea13940aea51062c92aa910d",
+  "size": 406632,
+  "notes": "Cài đặt → Mạng: DNS mã hoá, vượt chặn nhà mạng (Mức 1 / Mức 2), proxy SOCKS5 hoặc Shadowsocks (dán link ss://, cả SS 2022 của 3X-UI). Cả app và trình phát video đi theo các cài đặt này."
 }
