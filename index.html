@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TubeMini — YouTube cho iPad và iPhone iOS 5 – 8</title>
-<meta name="description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8), nhờ một server nhỏ trong mạng nhà.">
+<meta name="description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8). Đăng ký qua bot Telegram để nhận địa chỉ máy chủ.">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="cydia/icon.png">
 <link rel="stylesheet" href="style.css?v=810edb85">
@@ -14,11 +14,12 @@
 <div class="hero">
   <img src="img/icon.png" alt="Icon TubeMini" width="128" height="128">
   <h1>TubeMini</h1>
-  <p>Xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8), nhờ một server nhỏ chạy trong mạng nhà.</p>
+  <p>Xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8).</p>
   <a class="btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://tubemini.github.io/cydia/">Thêm nguồn vào Cydia</a>
   <a class="btn dark" href="https://github.com/TubeMini/TubeMini/releases/latest">Tải về</a>
+  <a class="btn tg" href="#dang-ky">Đăng ký dùng</a>
   <a class="btn dark" href="https://github.com/TubeMini/TubeMini">Mã nguồn</a>
-  <a class="btn tg" href="#telegram">Nhóm Telegram</a>
+  <a class="btn dark" href="#telegram">Nhóm Telegram</a>
   <small>Phiên bản 0.6.0 · Mã nguồn mở GPL-3.0 · Không liên quan tới YouTube hay Google</small>
 </div>
 
@@ -26,7 +27,7 @@
 
 <div class="card">
   <h2>Vì sao có TubeMini?</h2>
-  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini gồm hai phần:</p>
+  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini gồm app và máy chủ:</p>
   <div class="cols">
     <div class="col">
       <h3>App TubeMini cho iPad</h3>
@@ -43,14 +44,14 @@
       </ul>
     </div>
     <div class="col last">
-      <h3>Server tubemini-server</h3>
+      <h3>Máy chủ TubeMini</h3>
       <ul>
-        <li>Viết bằng Rust, chạy trên Windows, Ubuntu hoặc Docker</li>
-        <li>Giả lập API GData cũ: app YouTube 1.x + tweak TubeRepair dùng lại được</li>
-        <li>Video tải thẳng từ Google, không đi qua server</li>
+        <li>Đăng ký bằng bot Telegram, không cần tự cài gì</li>
+        <li>Mỗi người một tài khoản: kênh theo dõi và lịch sử riêng</li>
+        <li>Mỗi thiết bị một địa chỉ riêng, tối đa 2 thiết bị mỗi người</li>
+        <li>Video tải thẳng từ Google, không đi qua máy chủ</li>
         <li>Luôn phát tiếng gốc (bỏ bản lồng tiếng AI)</li>
-        <li>Tự quảng bá trong mạng nhà (Bonjour)</li>
-        <li>Cài trên Ubuntu bằng một script, tự cập nhật yt-dlp</li>
+        <li>Dùng được với cả app YouTube 1.x + tweak TubeRepair</li>
       </ul>
     </div>
   </div>
@@ -70,21 +71,17 @@
 
 <div class="card">
   <h2>Cách hoạt động</h2>
-  <p class="flow"><span>iPad (TubeMini)</span> ⇄ <span>tubemini-server trong nhà</span> ⇄ <span>YouTube</span></p>
-  <p>Server hỏi YouTube danh sách video và lấy link phát (bằng <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>), rồi trả cho iPad. Hình và tiếng iPad tải thẳng từ máy chủ của Google, nên server rất nhẹ. Server không cần tài khoản Google hay API key.</p>
+  <p class="flow"><span>iPad (TubeMini)</span> ⇄ <span>máy chủ TubeMini</span> ⇄ <span>YouTube</span></p>
+  <p>Máy chủ hỏi YouTube danh sách video và lấy link phát (bằng <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>), rồi trả cho iPad. Hình và tiếng iPad tải thẳng từ máy chủ của Google. Không cần tài khoản Google.</p>
 </div>
 
-<div class="card">
-  <h2>1. Cài server</h2>
-  <h3>Ubuntu / Debian</h3>
-  <p>Một script cài theo một trong hai cách: <b>Docker</b> (container, Docker hoặc Podman) hoặc <b>service</b> systemd. Cả hai cách đều tự khởi động cùng máy và tự cập nhật yt-dlp.</p>
-<pre><code>curl -LO https://github.com/TubeMini/TubeMini/releases/download/v0.6.0/tubemini-server-0.6.0.tar.gz
-tar xzf tubemini-server-0.6.0.tar.gz
-cd tubemini-server-0.6.0
-sudo ./install.sh</code></pre>
-  <p class="note">Script hỏi cách cài, cổng (mặc định 8080) và mã truy cập. Chạy lại để cập nhật; gỡ bằng <code>sudo ./install.sh --uninstall</code>.</p>
-  <h3>Windows / macOS</h3>
-  <p>Có Docker Desktop: trong thư mục giải nén chạy <code>docker compose up -d --build</code>. Trên Windows cũng chạy thẳng được <code>tubemini-server.exe</code> (build từ mã nguồn, xem <a href="https://github.com/TubeMini/TubeMini/blob/main/docs/SETUP.md">hướng dẫn</a>).</p>
+<div class="card tgcard" id="dang-ky">
+  <h2>1. Đăng ký nhận địa chỉ máy chủ</h2>
+  <img class="qr" src="img/bot-qr.png" width="145" height="145" alt="Mã QR bot Telegram t.me/tube_mini_bot">
+  <p>Nhắn bot Telegram <a href="https://t.me/tube_mini_bot"><b>@tube_mini_bot</b></a>, bấm <b>📝 Đăng ký</b>. Bot gửi địa chỉ máy chủ riêng cho thiết bị của bạn, dạng <code>https://…/u/&lt;mã&gt;</code>.</p>
+  <p class="note">Tin chứa địa chỉ tự xoá sau một lúc, hãy chép ngay. Mất địa chỉ thì vào bot, bấm <b>👤 Tài khoản của tôi</b> → Cấp lại mã. Mỗi người tối đa 2 thiết bị; thiết bị thứ hai cần admin duyệt (<b>➕ Thiết bị mới</b>). Mỗi địa chỉ chỉ dùng cho một thiết bị, đừng chia sẻ.</p>
+  <p class="note">iPad iOS 5 / 6 không mở được Telegram: quét mã QR bằng camera điện thoại, hoặc tìm <b>@tube_mini_bot</b> trong Telegram trên điện thoại / máy tính.</p>
+  <a class="btn tg" href="https://t.me/tube_mini_bot">Mở bot trong Telegram</a>
 </div>
 
 <div class="card">
@@ -97,12 +94,12 @@ sudo ./install.sh</code></pre>
   <h3>Cài bằng file .deb</h3>
   <p>Tải <code>vn.tubemini.io_0.6.0_iphoneos-arm.deb</code> ở trang <a href="https://github.com/TubeMini/TubeMini/releases/latest">Releases</a>, chép sang iPad hoặc iPhone rồi chạy <code>dpkg -i</code> (qua SSH, iFile hoặc Filza).</p>
   <h3>Kết nối</h3>
-  <p>Mở TubeMini → <b>Cài đặt</b> → nhập địa chỉ server, ví dụ <code>http://192.168.1.10:8080</code> (hoặc bấm <b>Tìm máy chủ trong mạng</b>), rồi bấm <b>Kiểm tra kết nối</b>.</p>
+  <p>Mở TubeMini → <b>Cài đặt</b> → <b>Máy chủ</b> → gõ đúng địa chỉ bot gửi (cả <code>https://</code>), rồi bấm <b>Kiểm tra kết nối</b>.</p>
 </div>
 
 <div class="card">
   <h2>Dùng app YouTube cũ?</h2>
-  <p>App YouTube 1.x với tweak <b>TubeRepair</b>: đặt Custom URL là <code>http://&lt;IP server&gt;:8080</code>. Thêm <code>/720</code> vào cuối để xem HD.</p>
+  <p>App YouTube 1.x với tweak <b>TubeRepair</b>: đặt Custom URL là địa chỉ bot gửi. Thêm <code>/720</code> vào cuối để xem HD.</p>
 </div>
 
 <div class="card tgcard" id="telegram">
@@ -116,11 +113,11 @@ sudo ./install.sh</code></pre>
 <div class="card">
   <h2>Câu hỏi thường gặp</h2>
   <h3>Xem được khi ra ngoài (4G) không?</h3>
-  <p>Được, nếu iPad kết nối VPN về nhà (L2TP/IPsec có sẵn trong iOS). Server cũng có chế độ phát qua server (<code>proxy_fallback</code>), mặc định tắt.</p>
+  <p>Được, ở bất cứ đâu trong Việt Nam, qua Wi-Fi hay 4G. Máy chủ chỉ phục vụ trong Việt Nam: ở nước ngoài hoặc khi bật VPN đặt ở nước ngoài thì không dùng được.</p>
   <h3>Có cần tài khoản Google không?</h3>
-  <p>Không. Kênh theo dõi và lịch sử lưu trên server của bạn.</p>
+  <p>Không. Kênh theo dõi và lịch sử lưu trên máy chủ, riêng cho từng người.</p>
   <h3>Máy nào dùng được?</h3>
-  <p>iPad và iPhone iOS 5 – 8 đã jailbreak. Đã thử trên iPad 1 (iOS 5.1.1), iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch) và iPad mini 1 (iOS 8.4.1). Server chạy trên mọi máy Windows, Linux hay macOS.</p>
+  <p>iPad và iPhone iOS 5 – 8 đã jailbreak. Đã thử trên iPad 1 (iOS 5.1.1), iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch) và iPad mini 1 (iOS 8.4.1).</p>
 </div>
 
 </div>
