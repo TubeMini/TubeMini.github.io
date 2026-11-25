@@ -1,17 +1,17 @@
 Origin: TubeMini
 Label: TubeMini
 Suite: stable
-Version: 0.6.0
+Version: 0.7.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: TubeMini — YouTube cho iPad và iPhone iOS 5 – 8
-Date: Wed, 25 Nov 2026 14:13:29 UTC
+Date: Wed, 25 Nov 2026 14:52:01 UTC
 MD5Sum:
- b1be325652f36e5645abc8477bffd8ff 4296 Packages
- 1902e4506ad42bdaae6e43a348b22458 1052 Packages.gz
- 38cfdb0fb14852b0497f1f1ab8a2326e 1219 Packages.bz2
+ e9bbbda80dcc0920b24123b4968bd990 5028 Packages
+ 5545497b448529d8879d34f54061fbb9 1205 Packages.gz
+ 247a0a8312980c4528c2877857355e28 1384 Packages.bz2
 SHA256:
- 92d777c9103469ab4aa2565b3d37fe6e0342ee882adc3e52dfdeee9423e92f31 4296 Packages
- a223a0fb06a19396f47dbc0e55ecf5e9e0e39b4d968e883fbfb87f4b04673224 1052 Packages.gz
- ca0b46774084de6055ef2faca609f8634b81679d76c067179172f962013574f9 1219 Packages.bz2
+ 3ea34cc0a85cac904064c4a6e7be4a42b68e42218c25c729cdcf991b1f39b652 5028 Packages
+ 4001cf5964f128836465feeca8fadbb0d8d6077408b0b69eac3e973d6e100bcf 1205 Packages.gz
+ 3405d77d44b30143a61c05d6e486cb24f4bbf09d2bec40ea763fa7d517e67693 1384 Packages.bz2
