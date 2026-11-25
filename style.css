@@ -120,6 +120,62 @@ pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
     background: #f5f6f8;
 }
 .note { color: #6a6d75; font-size: 14px; }
+.features { padding-left: 20px; margin: 4px 0 8px; }
+.features li { margin: 3px 0; }
+
+/* "Cách hoạt động": boxes and arrows from a table and borders (Safari iOS 5 / 6: no flex, no grid, no SVG sizing) */
+.diagram { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 10px 0 6px; }
+.diagram td { width: 38%; padding: 0; vertical-align: top; text-align: center; }
+.diagram td.mid { width: 24%; vertical-align: middle; }
+.node {
+    padding: 10px 6px;
+    border: 1px solid #c7c9ce;
+    border-radius: 10px;
+    background: #f5f6f8;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.node small { display: block; color: #6a6d75; font-size: 12px; }
+.node.app {
+    color: #fff;
+    border-color: #0d0e10;
+    background: #3a3c42;
+    background-image: -webkit-linear-gradient(top, #5a5d65 0%, #33353a 100%);
+    background-image: linear-gradient(to bottom, #5a5d65 0%, #33353a 100%);
+}
+.node.app small { color: #c9cbd1; }
+.node.google { border-color: #e3a3a5; background: #fdeeee; }
+/* Arrow pointing up into the app: a line and a border triangle */
+.up { position: relative; height: 46px; }
+.up .tip {
+    position: absolute; top: 0; left: 50%; margin-left: -7px; width: 0; height: 0;
+    border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 10px solid #8d9098;
+}
+.up .line { position: absolute; top: 10px; bottom: 0; left: 50%; margin-left: -1px; width: 2px; background: #8d9098; }
+.up.big .tip { margin-left: -14px; border-left-width: 14px; border-right-width: 14px; border-bottom: 16px solid #c4161c; }
+.up.big .line { top: 16px; margin-left: -5px; width: 10px; background: #c4161c; }
+.tag { padding: 4px 2px 8px; color: #5d6068; font-size: 13px; line-height: 1.35; }
+.tag.strong { color: #a3151a; font-weight: bold; }
+.tag i { font-weight: normal; }
+/* Server ⇄ YouTube */
+.side { position: relative; height: 26px; }
+.side .hline { position: absolute; top: 12px; left: 4px; right: 4px; height: 2px; background: #8d9098; }
+.side .num { position: relative; z-index: 1; }
+.num {
+    display: inline-block;
+    width: 20px; height: 20px;
+    border-radius: 10px;
+    background: #6a6d75;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    font-style: normal;
+}
+.num.red { background: #c4161c; }
+.legend { padding-left: 22px; margin: 10px 0 6px; }
+.legend li { margin: 5px 0; }
 
 /* Telegram card: QR code beside the text (Telegram itself does not open on iOS 6) */
 .tgcard:after { content: ""; display: block; clear: both; }

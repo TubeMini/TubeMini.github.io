@@ -7,7 +7,7 @@
 <meta name="description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8). Đăng ký qua bot Telegram để nhận địa chỉ máy chủ.">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="cydia/icon.png">
-<link rel="stylesheet" href="style.css?v=810edb85">
+<link rel="stylesheet" href="style.css?v=4db4ca5c">
 </head>
 <body>
 
@@ -27,11 +27,8 @@
 
 <div class="card">
   <h2>Vì sao có TubeMini?</h2>
-  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini gồm app và máy chủ:</p>
-  <div class="cols">
-    <div class="col">
-      <h3>App TubeMini cho iPad</h3>
-      <ul>
+  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini là app YouTube viết riêng cho iPad và iPhone đời cũ:</p>
+      <ul class="features">
         <li>Tìm video, tìm kênh, video liên quan, bình luận</li>
         <li>Phát 360p, 720p, 1080p; đổi chất lượng ngay khi đang xem</li>
         <li>Thao tác nhanh: chạm đúp tua 10 giây, chụm để lấp đầy, vuốt chỉnh độ sáng / âm lượng, tốc độ, hẹn giờ tắt</li>
@@ -46,19 +43,6 @@
         <li>Giao diện sáng / tối, thẻ hoặc danh sách</li>
         <li>Tự cập nhật (OTA) ngay trong app</li>
       </ul>
-    </div>
-    <div class="col last">
-      <h3>Máy chủ TubeMini</h3>
-      <ul>
-        <li>Đăng ký bằng bot Telegram, không cần tự cài gì</li>
-        <li>Mỗi người một tài khoản: kênh theo dõi và lịch sử riêng</li>
-        <li>Mỗi thiết bị một địa chỉ riêng, tối đa 2 thiết bị mỗi người</li>
-        <li>Video tải thẳng từ Google, không đi qua máy chủ</li>
-        <li>Luôn phát tiếng gốc (bỏ bản lồng tiếng AI)</li>
-        <li>Dùng được với cả app YouTube 1.x + tweak TubeRepair</li>
-      </ul>
-    </div>
-  </div>
 </div>
 
 <div class="card">
@@ -73,10 +57,29 @@
   </div>
 </div>
 
-<div class="card">
+<div class="card" id="cach-hoat-dong">
   <h2>Cách hoạt động</h2>
-  <p class="flow"><span>iPad (TubeMini)</span> ⇄ <span>máy chủ TubeMini</span> ⇄ <span>YouTube</span></p>
-  <p>Máy chủ hỏi YouTube danh sách video và lấy link phát (bằng <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>), rồi trả cho iPad. Hình và tiếng iPad tải thẳng từ máy chủ của Google. Không cần tài khoản Google.</p>
+  <table class="diagram">
+    <tr>
+      <td colspan="3"><div class="node app"><b>iPad / iPhone</b><small>app TubeMini</small></div></td>
+    </tr>
+    <tr>
+      <td><div class="up"><span class="tip"></span><span class="line"></span></div><div class="tag"><span class="num">1</span> danh sách, link phát<br><i>dữ liệu nhỏ</i></div></td>
+      <td></td>
+      <td><div class="up big"><span class="tip"></span><span class="line"></span></div><div class="tag strong"><span class="num red">3</span> hình, tiếng, ảnh,<br>video tải về</div></td>
+    </tr>
+    <tr>
+      <td><div class="node"><b>Máy chủ TubeMini</b></div></td>
+      <td class="mid"><div class="side"><span class="num">2</span><span class="hline"></span></div></td>
+      <td><div class="node google"><b>YouTube / Google</b><small>video và ảnh</small></div></td>
+    </tr>
+  </table>
+  <ol class="legend">
+    <li>App hỏi <b>máy chủ TubeMini</b>: trang chủ, tìm kiếm, kênh, thông tin video, link để phát; kênh theo dõi, lịch sử và chỗ đang xem cũng lưu ở đây. Toàn là dữ liệu nhỏ (chữ), vài KB mỗi lần.</li>
+    <li>Máy chủ hỏi YouTube các thông tin đó và lấy link phát (bằng <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>).</li>
+    <li><b>Hình, tiếng, ảnh thu nhỏ và video tải về: app tải thẳng từ máy chủ của Google</b>, không đi qua máy chủ TubeMini. Đây là phần nặng nhất.</li>
+  </ol>
+  <p class="note">Cài đặt → Mạng của app (TLS mới, DNS mã hoá, vượt chặn, proxy) áp dụng cho cả đường 1 và đường 3. Không cần tài khoản Google.</p>
 </div>
 
 <div class="card tgcard" id="dang-ky">
@@ -102,11 +105,6 @@
   <p>Mở TubeMini → <b>Cài đặt</b> → <b>Máy chủ</b> → gõ địa chỉ bot gửi, rồi bấm <b>Kiểm tra kết nối</b>. Không cần gõ <code>https://</code>; chữ hoa hay thường đều được.</p>
 </div>
 
-<div class="card">
-  <h2>Dùng app YouTube cũ?</h2>
-  <p>App YouTube 1.x với tweak <b>TubeRepair</b>: đặt Custom URL là địa chỉ bot gửi. Thêm <code>/720</code> vào cuối để xem HD.</p>
-</div>
-
 <div class="card tgcard" id="telegram">
   <h2>Nhóm Telegram</h2>
   <img class="qr" src="img/telegram-qr.png" width="145" height="145" alt="Mã QR nhóm Telegram t.me/tivikit">
@@ -118,9 +116,9 @@
 <div class="card">
   <h2>Câu hỏi thường gặp</h2>
   <h3>Xem được khi ra ngoài (4G) không?</h3>
-  <p>Được, ở bất cứ đâu trong Việt Nam, qua Wi-Fi hay 4G. Máy chủ chỉ phục vụ trong Việt Nam: ở nước ngoài hoặc khi bật VPN đặt ở nước ngoài thì không dùng được.</p>
+  <p>Được, ở bất cứ đâu trong Việt Nam, qua Wi-Fi hay 4G. Ở nước ngoài, hoặc khi bật VPN đặt ở nước ngoài, thì không dùng được.</p>
   <h3>Có cần tài khoản Google không?</h3>
-  <p>Không. Kênh theo dõi và lịch sử lưu trên máy chủ, riêng cho từng người.</p>
+  <p>Không. Kênh theo dõi và lịch sử lưu riêng cho từng người.</p>
   <h3>Máy nào dùng được?</h3>
   <p>iPad và iPhone iOS 5 – 8 đã jailbreak. Đã thử trên iPad 1 (iOS 5.1.1), iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch) và iPad mini 1 (iOS 8.4.1).</p>
 </div>
