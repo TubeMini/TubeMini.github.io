@@ -1,3 +1,22 @@
+Package: vn.tubemini.float
+Name: TubeMini - Hình nổi
+Version: 0.8.0
+Architecture: iphoneos-arm
+Description: Hinh trong hinh (PiP) cho TubeMini tren iOS 6 - 8: dang xem video, bam "Hinh noi" - video thanh khung nho noi tren man hinh chinh va app khac. Cham khung de mo lai TubeMini, cham hai lan de doi co. SpringBoard khoi dong lai sau khi cai.
+Maintainer: TubeMini <https://github.com/TubeMini>
+Author: TubeMini <https://github.com/TubeMini>
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 6.0), vn.tubemini.io (>= 0.8.0)
+Homepage: https://tubemini.github.io/
+Depiction: https://tubemini.github.io/cydia/depiction/
+Icon: https://tubemini.github.io/cydia/icon.png
+Filename: debs/vn.tubemini.float_0.8.0_iphoneos-arm.deb
+Size: 16548
+MD5sum: ebfa17930cf4390a3ceaec913deaba5c
+SHA1: 5a3fd9ab10ef5178acc5cd019c36c1a1c96c9cbc
+SHA256: 87a962b516aa76c332364cef2a9169e8a3b003182468c38a0a273d0830604998
+Installed-Size: 76
+
 Package: vn.tubemini.io
 Name: TubeMini
 Version: 0.5.0
@@ -130,3 +149,22 @@ MD5sum: cfb81cafe83ebaf34efc9c7d9791519a
 SHA1: fc4c3280e843af21216699c11c1a801a4af0dab0
 SHA256: daaa07516067c700e046b4bfd862adea4def45edb1710014305cf0060f68ea12
 Installed-Size: 648
+
+Package: vn.tubemini.io
+Name: TubeMini
+Version: 0.8.0
+Architecture: iphoneos-arm
+Description: Ung dung YouTube cho iPad va iPhone iOS 5 - 8. Dang ky dia chi may chu qua bot Telegram @tube_mini_bot.
+Maintainer: TubeMini <https://github.com/TubeMini>
+Author: TubeMini <https://github.com/TubeMini>
+Section: Multimedia
+Depends: firmware (>= 5.0)
+Homepage: https://tubemini.github.io/
+Depiction: https://tubemini.github.io/cydia/depiction/
+Icon: https://tubemini.github.io/cydia/icon.png
+Filename: debs/vn.tubemini.io_0.8.0_iphoneos-arm.deb
+Size: 347364
+MD5sum: d1b16deb65c87f9b06602ce6b5e18b86
+SHA1: 515f92e011226b59e4736a3babc66d3dcc1dcbb1
+SHA256: 0dcf93fe7fb9e7e6f0ebeced34c7f753d9265678ae18c3730c57b321c4a84eaf
+Installed-Size: 716
