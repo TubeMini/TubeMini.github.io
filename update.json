@@ -1,8 +1,8 @@
 {
-  "version": "0.10.0",
-  "package_version": "0.10.0",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_0.10.0_iphoneos-arm.deb",
-  "sha256": "8e8418c3cd8df7c2c2a6cd622928f393875350ced942281f19aa75fbf060196d",
-  "size": 765940,
-  "notes": "TLS mới: app tự mã hoá kết nối (TLS 1.3, chứng chỉ gốc Mozilla) thay cho TLS cũ của iOS, để vẫn vào được YouTube và máy chủ về sau. Ảnh lớn ở trang video nét hơn. Hình nổi: lấy video về thì phát tiếp."
+  "version": "1.0.0",
+  "package_version": "1.0.0",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.0.0_iphoneos-arm.deb",
+  "sha256": "5077f8d583b36dde1f404780f0686fcb2beda7cbcd0273471caa1b28ddf3bf41",
+  "size": 765938,
+  "notes": "Bản 1.0.0: TLS mới (TLS 1.3, chứng chỉ gốc Mozilla) để vẫn vào được YouTube và máy chủ về sau; ảnh trang video nét hơn; Hình nổi lấy video về thì phát tiếp."
 }
