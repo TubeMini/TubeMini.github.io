@@ -19,6 +19,25 @@ Installed-Size: 76
 
 Package: vn.tubemini.io
 Name: TubeMini
+Version: 0.10.0
+Architecture: iphoneos-arm
+Description: Ung dung YouTube cho iPad va iPhone iOS 5 - 8. Dang ky dia chi may chu qua bot Telegram @tube_mini_bot.
+Maintainer: TubeMini <https://github.com/TubeMini>
+Author: TubeMini <https://github.com/TubeMini>
+Section: Multimedia
+Depends: firmware (>= 5.0)
+Homepage: https://tubemini.github.io/
+Depiction: https://tubemini.github.io/cydia/depiction/
+Icon: https://tubemini.github.io/cydia/icon.png
+Filename: debs/vn.tubemini.io_0.10.0_iphoneos-arm.deb
+Size: 765940
+MD5sum: 3f2413eb84284f36188ce6636719fb7e
+SHA1: fc03dc2c5ab4ce8e1b13cb05566d7c9c2b904fad
+SHA256: 8e8418c3cd8df7c2c2a6cd622928f393875350ced942281f19aa75fbf060196d
+Installed-Size: 1464
+
+Package: vn.tubemini.io
+Name: TubeMini
 Version: 0.5.0
 Architecture: iphoneos-arm
 Description: Ứng dụng YouTube cho iPad iOS 6, dùng server tubemini-server trong mạng nhà.
