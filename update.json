@@ -1,8 +1,8 @@
 {
-  "version": "1.1.0",
-  "package_version": "1.1.0",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.1.0_iphoneos-arm.deb",
-  "sha256": "bc7f1715af06703d27634c16176f0e9c6d61982e7539ab8e1328dd4999b7022f",
-  "size": 798934,
-  "notes": "Bản 1.1.0: bấm link YouTube trong Safari, GramMini, Tin nhắn, Mail… là mở thẳng trong TubeMini (video, Shorts, kênh, playlist, tìm kiếm); sửa trang trắng sau khi đóng trình phát trên iOS 5."
+  "version": "1.2.0",
+  "package_version": "1.2.0",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.2.0_iphoneos-arm.deb",
+  "sha256": "52a4ba856f9573e77f58ca3dd386e09036a8df0c416a38b3889c54b33fd7bbb6",
+  "size": 812614,
+  "notes": "Bản 1.2.0: nút Chia sẻ như app YouTube — chép link youtu.be (có \"Bắt đầu tại\"), gửi qua Tin nhắn, Mail; chia sẻ cả kênh, playlist, hoặc nhấn giữ một video trong danh sách."
 }
