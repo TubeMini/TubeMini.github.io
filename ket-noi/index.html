@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mở TubeMini</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.open { text-align: center; }
+.open .btn { margin: 6px 0 14px; }
+.addr { word-wrap: break-word; }
+</style>
+</head>
+<body>
+<!-- The bot's "📲 Mở trong TubeMini" button opens this page with the device's address after "#".
+     The part after "#" stays in the browser (it is never sent to GitHub). The page hands the
+     address to the app as tubemini://server?url=…; the app asks before using it. -->
+<div class="hero">
+  <img src="../apple-touch-icon.png" width="128" height="128" alt="">
+  <h1>TubeMini</h1>
+</div>
+
+<div class="card open">
+  <h2 id="title">Đang mở TubeMini…</h2>
+  <p id="lead">TubeMini sẽ hỏi bạn có dùng địa chỉ máy chủ này không. Bấm <b>Kết nối</b> là xong.</p>
+  <a class="btn" id="go" href="#">Mở TubeMini</a>
+  <p id="addrline">Địa chỉ máy chủ của bạn:<br><code class="addr" id="addr">…</code></p>
+</div>
+
+<div class="card">
+  <h2>App không tự mở?</h2>
+  <p>Cần TubeMini 1.0.1 trở lên (cập nhật trong app hoặc Cydia). Hoặc làm bằng tay: mở TubeMini → <b>Cài đặt</b> → <b>Máy chủ</b>, gõ địa chỉ ở trên rồi bấm <b>Kiểm tra kết nối</b>.</p>
+  <p class="note">Đừng gửi địa chỉ này cho ai: ai có nó là dùng được tài khoản của bạn.</p>
+</div>
+
+<script>
+// Safari iOS 5 / 6: plain ES3, no addEventListener on the fragment, textContent only
+(function () {
+  var a = location.hash.replace(/^#/, '');
+  try { a = decodeURIComponent(a); } catch (e) {}
+  // A server address: https://host/u/<key>, or the same without https://
+  if (!/^(https?:\/\/)?[a-z0-9.\-]+(:\d+)?(\/[a-z0-9_\-]+)*\/?$/i.test(a) || a.length > 300) a = '';
+  var title = document.getElementById('title'), lead = document.getElementById('lead');
+  var go = document.getElementById('go'), addr = document.getElementById('addr');
+  if (!a) {
+    title.textContent = 'Thiếu địa chỉ máy chủ';
+    lead.textContent = 'Hãy bấm lại nút «Mở trong TubeMini» trong tin nhắn của bot @tube_mini_bot.';
+    go.style.display = 'none';
+    document.getElementById('addrline').style.display = 'none';
+    return;
+  }
+  var link = 'tubemini://server?url=' + encodeURIComponent(a);
+  addr.textContent = a;
+  go.href = link;
+  setTimeout(function () { location.href = link; }, 300);
+})();
+</script>
+</body>
+</html>

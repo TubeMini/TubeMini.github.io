@@ -225,3 +225,22 @@ MD5sum: 88230f59d01e49f6e2826cd3f722f378
 SHA1: 8330473d6ee8ea082ad2583369d310b3dd935805
 SHA256: 5077f8d583b36dde1f404780f0686fcb2beda7cbcd0273471caa1b28ddf3bf41
 Installed-Size: 1464
+
+Package: vn.tubemini.io
+Name: TubeMini
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Ung dung YouTube cho iPad va iPhone iOS 5 - 8. Dang ky dia chi may chu qua bot Telegram @tube_mini_bot.
+Maintainer: TubeMini <https://github.com/TubeMini>
+Author: TubeMini <https://github.com/TubeMini>
+Section: Multimedia
+Depends: firmware (>= 5.0)
+Homepage: https://tubemini.github.io/
+Depiction: https://tubemini.github.io/cydia/depiction/
+Icon: https://tubemini.github.io/cydia/icon.png
+Filename: debs/vn.tubemini.io_1.0.1_iphoneos-arm.deb
+Size: 769350
+MD5sum: c2ae9f438bc2bec237adc64554ac6a72
+SHA1: 39dd9365ad9bc9d89b20d0e46d276f7b52854ad2
+SHA256: e95de61ce3ed690ac4121ff730c573610cd298aff67500bd2c4a456162631b8f
+Installed-Size: 1480
