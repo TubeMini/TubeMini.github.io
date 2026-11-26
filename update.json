@@ -1,8 +1,8 @@
 {
-  "version": "1.0.1",
-  "package_version": "1.0.1",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.0.1_iphoneos-arm.deb",
-  "sha256": "e95de61ce3ed690ac4121ff730c573610cd298aff67500bd2c4a456162631b8f",
-  "size": 769350,
-  "notes": "Bản 1.0.1: có GramMini thì chạm vào thẻ bot trong Cài đặt là mở chat với bot; nút «📲 Mở trong TubeMini» của bot tự điền địa chỉ máy chủ vào app."
+  "version": "1.1.0",
+  "package_version": "1.1.0",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.1.0_iphoneos-arm.deb",
+  "sha256": "bc7f1715af06703d27634c16176f0e9c6d61982e7539ab8e1328dd4999b7022f",
+  "size": 798934,
+  "notes": "Bản 1.1.0: bấm link YouTube trong Safari, GramMini, Tin nhắn, Mail… là mở thẳng trong TubeMini (video, Shorts, kênh, playlist, tìm kiếm); sửa trang trắng sau khi đóng trình phát trên iOS 5."
 }
