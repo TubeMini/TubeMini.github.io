@@ -1,10 +1,10 @@
 {
-  "version": "1.3.1",
-  "package_version": "1.3.1",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.1_iphoneos-arm.deb",
-  "sha256": "b247ac51f805e5cfb5669d74df2e0385165c74ed4a13352e608cbc5110d799d5",
-  "size": 829596,
-  "notes": "Bản 1.3.1: cập nhật trong app lấy từ máy chủ repo.caominh.net trước; nguồn Cydia mới https://repo.caominh.net/ (thêm nguồn này để nhận bản mới sớm nhất); nguồn Cydia có chữ ký số.",
-  "sig": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.1_iphoneos-arm.deb.sig",
-  "sig_sha256": "51efc9f6f1092b85303161523fabd17334f7abd2b0e93d0d59af7b53f5b38e07"
+  "version": "1.3.2",
+  "package_version": "1.3.2",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.2_iphoneos-arm.deb",
+  "sha256": "7de00cbe5623c836579bfc7ef0c23a2725c35fd8cc1cd8641d3a5d2b8abfd1ec",
+  "size": 867390,
+  "notes": "Bản 1.3.2: màn Ủng hộ TubeMini (Cài đặt, mục Cập nhật) — chuyển khoản VietQR, app tự báo khi tiền về.",
+  "sig": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.2_iphoneos-arm.deb.sig",
+  "sig_sha256": "3e730ef4ef72c61b884552444b404b5592cb97bd0763c071055a3400fb6de8fd"
 }
