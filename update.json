@@ -1,8 +1,10 @@
 {
-  "version": "1.3.0",
-  "package_version": "1.3.0",
-  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.0_iphoneos-arm.deb",
-  "sha256": "14449732838c11314c0815ac891efc2b0eab9a8121957c827e0a3b49d9e57edd",
-  "size": 813276,
-  "notes": "Bản 1.3.0: video 60 fps lên 720p60 / 1080p60 (trước đây chỉ 480p) trên iPad 2, iPad mini, iPhone 4S trở lên; nút chất lượng ghi rõ 1080p60."
+  "version": "1.3.1",
+  "package_version": "1.3.1",
+  "url": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.1_iphoneos-arm.deb",
+  "sha256": "b247ac51f805e5cfb5669d74df2e0385165c74ed4a13352e608cbc5110d799d5",
+  "size": 829596,
+  "notes": "Bản 1.3.1: cập nhật trong app lấy từ máy chủ repo.caominh.net trước; nguồn Cydia mới https://repo.caominh.net/ (thêm nguồn này để nhận bản mới sớm nhất); nguồn Cydia có chữ ký số.",
+  "sig": "https://tubemini.github.io/cydia/debs/vn.tubemini.io_1.3.1_iphoneos-arm.deb.sig",
+  "sig_sha256": "51efc9f6f1092b85303161523fabd17334f7abd2b0e93d0d59af7b53f5b38e07"
 }
