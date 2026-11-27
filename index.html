@@ -5,133 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TubeMini — YouTube cho iPad và iPhone iOS 5 – 8</title>
 <meta name="description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8). Đăng ký qua bot Telegram để nhận địa chỉ máy chủ.">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" href="cydia/icon.png">
-<link rel="stylesheet" href="style.css?v=4db4ca5c">
+<meta property="og:title" content="TubeMini — YouTube cho iPad và iPhone iOS 5 – 8">
+<meta property="og:description" content="TubeMini: xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8). Đăng ký qua bot Telegram để nhận địa chỉ máy chủ.">
+<meta property="og:url" content="https://repo.caominh.net/tubemini/">
+<link rel="canonical" href="https://repo.caominh.net/tubemini/">
+<!-- Trang giới thiệu đã chuyển về máy chủ của dự án (D25 của repo.caominh.net). Nguồn Cydia ở thư mục con vẫn chạy như cũ. -->
+<script>location.replace("https://repo.caominh.net/tubemini/" + location.hash);</script>
+<meta http-equiv="refresh" content="0; url=https://repo.caominh.net/tubemini/">
+<style>body { font: 17px Helvetica, Arial, sans-serif; margin: 48px 20px; text-align: center; color: #222; } a { color: #0a62c9; }</style>
 </head>
 <body>
-
-<div class="hero">
-  <img src="img/icon.png" alt="Icon TubeMini" width="128" height="128">
-  <h1>TubeMini</h1>
-  <p>Xem YouTube trên iPad và iPhone đời cũ (iOS 5 – 8).</p>
-  <a class="btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://tubemini.github.io/cydia/">Thêm nguồn vào Cydia</a>
-  <a class="btn dark" href="https://github.com/TubeMini/TubeMini/releases/latest">Tải về</a>
-  <a class="btn tg" href="#dang-ky">Đăng ký dùng</a>
-  <a class="btn dark" href="https://github.com/TubeMini/TubeMini">Mã nguồn</a>
-  <a class="btn dark" href="#telegram">Nhóm Telegram</a>
-  <small>Phiên bản 1.3.0 · Mã nguồn mở GPL-3.0 · Không liên quan tới YouTube hay Google</small>
-</div>
-
-<div class="wrap">
-
-<div class="card">
-  <h2>Vì sao có TubeMini?</h2>
-  <p>App YouTube gốc trên iOS 5 – 8 đã ngừng chạy từ lâu, và trình duyệt cũ không mở nổi trang YouTube bây giờ. TubeMini là app YouTube viết riêng cho iPad và iPhone đời cũ:</p>
-      <ul class="features">
-        <li>Tìm video, tìm kênh, video liên quan, bình luận</li>
-        <li><b>Chia sẻ</b> như app YouTube: chép link <code>youtu.be</code> (cả "Bắt đầu tại" một giây nào đó), gửi qua Tin nhắn, Mail; chia sẻ cả kênh, playlist</li>
-        <li><b>Link YouTube mở bằng TubeMini</b>: bấm link trong Safari, GramMini, Tin nhắn, Mail… là mở thẳng trong app (video, Shorts, youtu.be, kênh, playlist, tìm kiếm)</li>
-        <li>Phát 360p, 720p, 1080p, cả video 60 fps (720p60 / 1080p60 trên máy từ iPad 2, iPhone 4S); đổi chất lượng ngay khi đang xem</li>
-        <li>Thao tác nhanh: chạm đúp tua 10 giây, chụm để lấp đầy, vuốt chỉnh độ sáng / âm lượng, tốc độ, hẹn giờ tắt</li>
-        <li><b>Thu nhỏ</b> trình phát để lướt tìm video khác; <b>Hình nổi</b>: video nổi trên màn hình chính và app khác (gói riêng)</li>
-        <li>Theo dõi kênh, trang chủ hiện video mới</li>
-        <li>Lịch sử, xem tiếp từ chỗ cũ</li>
-        <li><b>Chỉ nghe</b>: phát khi khoá màn hình, thanh nghe nhạc thu nhỏ</li>
-        <li><b>Mạng</b>: DNS mã hoá, vượt chặn nhà mạng, proxy SOCKS5 / Shadowsocks (dán link <code>ss://</code>, cả SS 2022 của 3X-UI)</li>
-        <li><b>TLS mới</b>: app tự mã hoá kết nối (TLS 1.3, chứng chỉ gốc Mozilla), vẫn vào được YouTube và máy chủ khi TLS cũ của iOS 5 / 6 không còn được nhận</li>
-        <li><b>Tải về</b> 360p / 720p / 1080p để xem khi không có mạng</li>
-        <li>Giao diện kiểu iOS 26 như app YouTube mới: thanh tab kính nổi, tự thu gọn khi cuộn, thẻ video lớn</li>
-        <li>Giao diện sáng / tối, thẻ hoặc danh sách</li>
-        <li>Tự cập nhật (OTA) ngay trong app</li>
-      </ul>
-</div>
-
-<div class="card">
-  <h2>Ảnh chụp trên iPad mini 1</h2>
-  <div class="shots">
-    <div class="shot"><img src="img/home.png" alt="Trang chủ">Trang chủ</div>
-    <div class="shot"><img src="img/video.png" alt="Trang video">Trang video</div>
-    <div class="shot"><img src="img/channel.png" alt="Trang kênh">Trang kênh</div>
-    <div class="shot"><img src="img/search.png" alt="Tìm kiếm">Tìm kiếm</div>
-    <div class="shot"><img src="img/download.png" alt="Chọn chất lượng để tải về">Tải về xem offline</div>
-    <div class="shot"><img src="img/dark.png" alt="Giao diện tối">Giao diện tối</div>
-  </div>
-</div>
-
-<div class="card" id="cach-hoat-dong">
-  <h2>Cách hoạt động</h2>
-  <table class="diagram">
-    <tr>
-      <td colspan="3"><div class="node app"><b>iPad / iPhone</b><small>app TubeMini</small></div></td>
-    </tr>
-    <tr>
-      <td><div class="up"><span class="tip"></span><span class="line"></span></div><div class="tag"><span class="num">1</span> danh sách, link phát<br><i>dữ liệu nhỏ</i></div></td>
-      <td></td>
-      <td><div class="up big"><span class="tip"></span><span class="line"></span></div><div class="tag strong"><span class="num red">3</span> hình, tiếng, ảnh,<br>video tải về</div></td>
-    </tr>
-    <tr>
-      <td><div class="node"><b>Máy chủ TubeMini</b></div></td>
-      <td class="mid"><div class="side"><span class="num">2</span><span class="hline"></span></div></td>
-      <td><div class="node google"><b>YouTube / Google</b><small>video và ảnh</small></div></td>
-    </tr>
-  </table>
-  <ol class="legend">
-    <li>App hỏi <b>máy chủ TubeMini</b>: trang chủ, tìm kiếm, kênh, thông tin video, link để phát; kênh theo dõi, lịch sử và chỗ đang xem cũng lưu ở đây. Toàn là dữ liệu nhỏ (chữ), vài KB mỗi lần.</li>
-    <li>Máy chủ hỏi YouTube các thông tin đó và lấy link phát (bằng <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>).</li>
-    <li><b>Hình, tiếng, ảnh thu nhỏ và video tải về: app tải thẳng từ máy chủ của Google</b>, không đi qua máy chủ TubeMini. Đây là phần nặng nhất.</li>
-  </ol>
-  <p class="note">Cài đặt → Mạng của app (TLS mới, DNS mã hoá, vượt chặn, proxy) áp dụng cho cả đường 1 và đường 3. Không cần tài khoản Google.</p>
-</div>
-
-<div class="card tgcard" id="dang-ky">
-  <h2>1. Đăng ký nhận địa chỉ máy chủ</h2>
-  <img class="qr" src="img/bot-qr.png" width="145" height="145" alt="Mã QR bot Telegram t.me/tube_mini_bot">
-  <p>Nhắn bot Telegram <a href="https://t.me/tube_mini_bot"><b>@tube_mini_bot</b></a>, bấm <b>📝 Đăng ký</b>. Bot gửi địa chỉ máy chủ riêng cho thiết bị của bạn, dạng <code>https://…/u/&lt;mã&gt;</code>.</p>
-  <p class="note">Tin chứa địa chỉ tự xoá sau một lúc, hãy chép ngay. Mất địa chỉ thì vào bot, bấm <b>👤 Tài khoản của tôi</b> → Cấp lại mã. Mỗi người tối đa 2 thiết bị; thiết bị thứ hai cần admin duyệt (<b>➕ Thiết bị mới</b>). Mỗi địa chỉ chỉ dùng cho một thiết bị, đừng chia sẻ.</p>
-  <p class="note">iPad iOS 5 / 6 không chạy được app Telegram chính thức: quét mã QR bằng camera điện thoại, hoặc tìm <b>@tube_mini_bot</b> trong Telegram trên điện thoại / máy tính. Có <a href="https://itovn.github.io/GramMini/">GramMini</a> (Telegram cho iOS 5 / 6) trên máy thì vào TubeMini → Cài đặt, chạm vào thẻ bot là mở chat với bot.</p>
-  <a class="btn tg" href="https://t.me/tube_mini_bot">Mở bot trong Telegram</a>
-</div>
-
-<div class="card">
-  <h2>2. Cài app lên iPad</h2>
-  <p>Cần iPad (hoặc iPhone) <b>iOS 5, 6, 7 hoặc 8 đã jailbreak</b>.</p>
-  <h3>Cách nhanh: Cydia</h3>
-  <p>Trên iPad mở trang này bằng Safari, bấm <b>Thêm nguồn vào Cydia</b>. Hoặc vào Cydia → Nguồn → Sửa → Thêm, rồi nhập:</p>
-<pre><code>https://tubemini.github.io/cydia/</code></pre>
-  <p>Tìm <b>TubeMini</b> rồi cài. Các bản sau app tự báo khi có bản mới; bấm Cập nhật, app tự cài rồi khởi động lại màn hình chính.</p>
-  <p>Muốn xem video nổi trên màn hình chính và app khác (iOS 6 – 8): cài thêm gói <b>TubeMini - Hình nổi</b> trong cùng nguồn, rồi trong trình phát bấm <b>⋯ → Hình nổi</b>.</p>
-  <h3>Cài bằng file .deb</h3>
-  <p>Tải <code>vn.tubemini.io_1.3.0_iphoneos-arm.deb</code> ở trang <a href="https://github.com/TubeMini/TubeMini/releases/latest">Releases</a>, chép sang iPad hoặc iPhone rồi chạy <code>dpkg -i</code> (qua SSH, iFile hoặc Filza).</p>
-  <h3>Kết nối</h3>
-  <p>Mở TubeMini → <b>Cài đặt</b> → <b>Máy chủ</b> → gõ địa chỉ bot gửi, rồi bấm <b>Kiểm tra kết nối</b>. Không cần gõ <code>https://</code>; chữ hoa hay thường đều được.</p>
-  <p>Bot gửi địa chỉ tới GramMini ngay trên máy đó: bấm nút <b>📲 Mở trong TubeMini</b> dưới tin, TubeMini mở lại và hỏi có dùng địa chỉ này không; bấm <b>Kết nối</b> là xong (cần TubeMini 1.0.1).</p>
-</div>
-
-<div class="card tgcard" id="telegram">
-  <h2>Nhóm Telegram</h2>
-  <img class="qr" src="img/telegram-qr.png" width="145" height="145" alt="Mã QR nhóm Telegram t.me/tivikit">
-  <p>Hỏi cách cài, báo lỗi, góp ý tính năng và nhận tin khi có bản mới: nhóm <a href="https://t.me/tivikit"><b>t.me/tivikit</b></a> (<b>@tivikit</b>).</p>
-  <p class="note">iPad iOS 5 / 6 không mở được Telegram (máy chủ Telegram cần kết nối bảo mật mới hơn). Hãy quét mã QR bằng camera điện thoại, hoặc mở Telegram trên điện thoại / máy tính rồi tìm <b>@tivikit</b>.</p>
-  <a class="btn tg" href="https://t.me/tivikit">Mở trong Telegram</a>
-</div>
-
-<div class="card">
-  <h2>Câu hỏi thường gặp</h2>
-  <h3>Xem được khi ra ngoài (4G) không?</h3>
-  <p>Được, ở bất cứ đâu trong Việt Nam, qua Wi-Fi hay 4G. Ở nước ngoài, hoặc khi bật VPN đặt ở nước ngoài, thì không dùng được.</p>
-  <h3>Có cần tài khoản Google không?</h3>
-  <p>Không. Kênh theo dõi và lịch sử lưu riêng cho từng người.</p>
-  <h3>Máy nào dùng được?</h3>
-  <p>iPad và iPhone iOS 5 – 8 đã jailbreak. Đã thử trên iPad 1 (iOS 5.1.1), iPhone 5 (iOS 6.1.4, dùng hết màn 4 inch) và iPad mini 1 (iOS 8.4.1).</p>
-</div>
-
-</div>
-
-<div class="foot">
-  TubeMini là dự án mã nguồn mở (<a href="https://github.com/TubeMini/TubeMini/blob/main/LICENSE">GPL-3.0</a>), không liên quan tới YouTube hay Google.<br>
-  YouTube là nhãn hiệu của Google LLC. · <a href="https://github.com/TubeMini">github.com/TubeMini</a> · Telegram: <a href="https://t.me/tivikit">t.me/tivikit</a>
-</div>
-
+<p>Trang đã chuyển sang <a href="https://repo.caominh.net/tubemini/">https://repo.caominh.net/tubemini/</a>.</p>
 </body>
 </html>
